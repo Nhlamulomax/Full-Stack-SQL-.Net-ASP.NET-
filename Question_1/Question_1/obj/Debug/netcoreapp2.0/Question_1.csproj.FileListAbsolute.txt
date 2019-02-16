@@ -1,0 +1,11 @@
+C:\Users\james\Desktop\Zen\InterBet\Project\Question_1\Question_1\bin\Debug\netcoreapp2.0\Question_1.deps.json
+C:\Users\james\Desktop\Zen\InterBet\Project\Question_1\Question_1\bin\Debug\netcoreapp2.0\Question_1.runtimeconfig.json
+C:\Users\james\Desktop\Zen\InterBet\Project\Question_1\Question_1\bin\Debug\netcoreapp2.0\Question_1.runtimeconfig.dev.json
+C:\Users\james\Desktop\Zen\InterBet\Project\Question_1\Question_1\bin\Debug\netcoreapp2.0\Question_1.dll
+C:\Users\james\Desktop\Zen\InterBet\Project\Question_1\Question_1\bin\Debug\netcoreapp2.0\Question_1.pdb
+C:\Users\james\Desktop\Zen\InterBet\Project\Question_1\Question_1\obj\Debug\netcoreapp2.0\Question_1.csprojAssemblyReference.cache
+C:\Users\james\Desktop\Zen\InterBet\Project\Question_1\Question_1\obj\Debug\netcoreapp2.0\Question_1.csproj.CoreCompileInputs.cache
+C:\Users\james\Desktop\Zen\InterBet\Project\Question_1\Question_1\obj\Debug\netcoreapp2.0\Question_1.AssemblyInfoInputs.cache
+C:\Users\james\Desktop\Zen\InterBet\Project\Question_1\Question_1\obj\Debug\netcoreapp2.0\Question_1.AssemblyInfo.cs
+C:\Users\james\Desktop\Zen\InterBet\Project\Question_1\Question_1\obj\Debug\netcoreapp2.0\Question_1.dll
+C:\Users\james\Desktop\Zen\InterBet\Project\Question_1\Question_1\obj\Debug\netcoreapp2.0\Question_1.pdb
