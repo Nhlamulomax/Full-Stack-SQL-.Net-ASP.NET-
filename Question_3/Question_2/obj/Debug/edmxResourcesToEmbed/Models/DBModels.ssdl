@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Q2Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'Named Banking.dbo.Transactions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Transactions">
+    <Key>
+      <PropertyRef Name="UniqueInstanceID" />
+      <PropertyRef Name="EffectiveDate" />
+      <PropertyRef Name="TransactionCode" />
+      <PropertyRef Name="TransactionAmount" />
+      <PropertyRef Name="TransactionDate" />
+      <PropertyRef Name="TransactionTime" />
+      <PropertyRef Name="DrCrIndicator" />
+      <PropertyRef Name="BankName" />
+      <PropertyRef Name="BranchCode" />
+      <PropertyRef Name="ReferenceNumber" />
+      <PropertyRef Name="AccountNumber" />
+      <PropertyRef Name="Identifier" />
+    </Key>
+    <Property Name="UniqueInstanceID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="EffectiveDate" Type="date" Nullable="false" />
+    <Property Name="TransactionCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TransactionAmount" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TransactionDate" Type="date" Nullable="false" />
+    <Property Name="TransactionTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="ChequeNumber" Type="varchar" MaxLength="50" />
+    <Property Name="DrCrIndicator" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BankName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BranchCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ReferenceNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AccountNumber" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Identifier" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="Q2ModelStoreContainer">
+    <EntitySet Name="Transactions" EntityType="Self.Transactions" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Transactions].[UniqueInstanceID] AS [UniqueInstanceID], 
+    [Transactions].[EffectiveDate] AS [EffectiveDate], 
+    [Transactions].[TransactionCode] AS [TransactionCode], 
+    [Transactions].[TransactionAmount] AS [TransactionAmount], 
+    [Transactions].[TransactionDate] AS [TransactionDate], 
+    [Transactions].[TransactionTime] AS [TransactionTime], 
+    [Transactions].[ChequeNumber] AS [ChequeNumber], 
+    [Transactions].[DrCrIndicator] AS [DrCrIndicator], 
+    [Transactions].[BankName] AS [BankName], 
+    [Transactions].[BranchCode] AS [BranchCode], 
+    [Transactions].[ReferenceNumber] AS [ReferenceNumber], 
+    [Transactions].[AccountNumber] AS [AccountNumber], 
+    [Transactions].[Identifier] AS [Identifier]
+    FROM [dbo].[Transactions] AS [Transactions]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

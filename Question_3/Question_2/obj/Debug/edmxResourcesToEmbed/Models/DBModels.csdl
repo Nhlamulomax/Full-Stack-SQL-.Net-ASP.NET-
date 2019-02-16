@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Q2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Transaction">
+    <Key>
+      <PropertyRef Name="UniqueInstanceID" />
+      <PropertyRef Name="EffectiveDate" />
+      <PropertyRef Name="TransactionCode" />
+      <PropertyRef Name="TransactionAmount" />
+      <PropertyRef Name="TransactionDate" />
+      <PropertyRef Name="TransactionTime" />
+      <PropertyRef Name="DrCrIndicator" />
+      <PropertyRef Name="BankName" />
+      <PropertyRef Name="BranchCode" />
+      <PropertyRef Name="ReferenceNumber" />
+      <PropertyRef Name="AccountNumber" />
+      <PropertyRef Name="Identifier" />
+    </Key>
+    <Property Name="UniqueInstanceID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EffectiveDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TransactionCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TransactionAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="TransactionDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="TransactionTime" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="ChequeNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DrCrIndicator" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BankName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="BranchCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ReferenceNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="AccountNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Identifier" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="DBModel" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Transactions" EntityType="Self.Transaction" />
+  </EntityContainer>
+</Schema>
